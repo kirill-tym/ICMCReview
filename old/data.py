@@ -162,19 +162,19 @@ def generate_dataset():
     train_id_sft = multiply_dataset(train_id, target_count=10000)
 
     # Сохранение сплитов
-    with open("train_id.jsonl", "w") as f:
+    with open("data/train_id.jsonl", "w") as f:
         for item in train_id:
             f.write(json.dumps(item) + "\n")
 
-    with open("train_id_sft.jsonl", "w") as f:
+    with open("data/train_id_sft.jsonl", "w") as f:
         for item in train_id_sft:
             f.write(json.dumps(item) + "\n")
 
-    with open("test_id.jsonl", "w") as f:
+    with open("data/test_id.jsonl", "w") as f:
         for item in test_id:
             f.write(json.dumps(item) + "\n")
 
-    with open("test_ood.jsonl", "w") as f:
+    with open("data/test_ood.jsonl", "w") as f:
         for item in all_ood_data:
             f.write(json.dumps(item) + "\n")
 

@@ -45,6 +45,6 @@ def create_dataset(filename, count, num_range):
 
 if __name__ == "__main__":
     random.seed(42)
-    create_dataset("../data/sft_train.jsonl", 600, (1, 9))  # SFT Train (ID: числа 1-9)
-    create_dataset("../data/test_id.jsonl", 100, (1, 9))  # Test ID (числа 1-9)
-    create_dataset("../data/test_ood.jsonl", 100, (10, 25))  # Test OOD (числа 10-25)
+    create_dataset("data/sft_train.jsonl", 600, (1, 9))  # SFT Train (ID: числа 1-9)
+    create_dataset("data/test_id.jsonl", 100, (1, 9))  # Test ID (числа 1-9)
+    create_dataset("data/test_ood.jsonl", 100, (10, 25))  # Test OOD (числа 10-25)

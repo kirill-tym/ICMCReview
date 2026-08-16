@@ -19,7 +19,7 @@ def test_sft():
     ).to(device)
     model.eval()
 
-    with open("../data/test_holdout.jsonl", "r", encoding="utf-8") as f:
+    with open("data/test_holdout.jsonl", "r", encoding="utf-8") as f:
         test_samples = [json.loads(line) for line in f]
 
     correct = 0

@@ -112,11 +112,11 @@ def generate_dataset():
 
     print(f"Generated {len(id_data)} ID examples and {len(ood_data)} OOD examples.")
 
-    with open("../old/train_id.jsonl", "w") as f:
+    with open("../old/data/train_id.jsonl", "w") as f:
         for item in id_data:
             f.write(json.dumps(item) + "\n")
 
-    with open("../old/test_ood.jsonl", "w") as f:
+    with open("../old/data/test_ood.jsonl", "w") as f:
         for item in ood_data:
             f.write(json.dumps(item) + "\n")
 

@@ -31,7 +31,7 @@ def solve_24(nums):
 
 
 def generate_dataset():
-    os.makedirs("../data", exist_ok=True)
+    os.makedirs("data", exist_ok=True)
 
     print("🧠 Поиск уникальных решаемых комбинаций 24-Game...")
 
@@ -56,7 +56,7 @@ def generate_dataset():
     test_data = all_samples[split_idx:]
 
     # Сохраняем Train (SFT / RL)
-    train_file = "../data/sft_train.jsonl"
+    train_file = "data/sft_train.jsonl"
     with open(train_file, "w", encoding="utf-8") as f:
         for nums, expr in train_data:
             shuffled_nums = list(nums)
@@ -71,7 +71,7 @@ def generate_dataset():
             f.write(json.dumps(item, ensure_ascii=False) + "\n")
 
     # Сохраняем Holdout Test (Только отложенные примеры!)
-    test_file = "../data/test_holdout.jsonl"
+    test_file = "data/test_holdout.jsonl"
     with open(test_file, "w", encoding="utf-8") as f:
         for nums, expr in test_data:
             shuffled_nums = list(nums)

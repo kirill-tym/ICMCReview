@@ -5,7 +5,7 @@ import random
 def generate_test_id():
     # Читаем уже существующий обучающий датасет
     try:
-        with open("../old/train_id.jsonl", "r") as f:
+        with open("../old/data/train_id.jsonl", "r") as f:
             train_data = [json.loads(line) for line in f]
     except FileNotFoundError:
         print("Ошибка: файл train_id.jsonl не найден!")
@@ -42,7 +42,7 @@ def generate_test_id():
     test_sample = test_data[:800]
 
     # Сохраняем в test_id.jsonl
-    with open("../old/test_id.jsonl", "w") as f:
+    with open("../old/data/test_id.jsonl", "w") as f:
         for item in test_sample:
             f.write(json.dumps(item) + "\n")
 
