@@ -5,14 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44886b5b-c594-4dba-a98f-2a2ef57a42c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ICMCReview.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/verifier.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_leak.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/investigate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/rl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/rl_new.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/scrval.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/sft.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/valid.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oldold/data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oldold/gen_ID.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oldold/rl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oldold/sft.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oldold/val.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oldold/val_ID.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oldold/valid.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sft.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smth/eval.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smth/generate_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smth/generate_data_old.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smth/test_sft.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smth/train_grpo_24.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smth/train_rl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smth/train_sft.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smth/verifier.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uv.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uv.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/verifier.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,10 +53,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1,
-  "fromUser": false
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;kirill-tym&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/kirill-tym/ICMCReview.git&quot;,
+    &quot;accountId&quot;: &quot;2514cb60-6d53-436f-81a6-d5a4bfd3d5ec&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3HAjNuN4lZweCVmgyZSjwOHBHZ1" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -44,12 +80,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.scrval.executor": "Run",
+    "Python.train_rl.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/kirill/PycharmProjects/ICMCReview/old",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -57,6 +96,18 @@
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/old" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/smth" />
+      <recent name="$PROJECT_DIR$/old" />
+      <recent name="$PROJECT_DIR$/old/grpo_game24" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
